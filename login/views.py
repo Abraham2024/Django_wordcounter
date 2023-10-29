@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
-def count(request):
+def index(request):
     #context = {
            # 'name':  'Abraham',
            # 'age' : 23,
@@ -11,7 +11,7 @@ def count(request):
          #include the dictionary name when using dictionary and the var key and value when using a variable
 
 
-    return render(request, 'count.html')
+    return render(request, 'index.html')
 
 
 def counter(request):
