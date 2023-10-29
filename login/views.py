@@ -11,7 +11,7 @@ def index(request):
          #include the dictionary name when using dictionary and the var key and value when using a variable
 
 
-    return render(request, 'index.html')
+    return render(request, 'count.html')
 
 
 def counter(request):
