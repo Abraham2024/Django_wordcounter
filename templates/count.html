@@ -1,0 +1,10 @@
+{% load static %} 
+ <link rel="stylesheet" href="{% static 'style.css' %}"> 
+ <h1> Welcome, input details here </h1> 
+  
+ <!-- we use the csrf token in Django to use post method for safety reasons--> 
+ <form action="counter" method= "POST" accept-charset="utf-8"> 
+         {%csrf_token%} 
+   <textarea name="text" id="text" rows="15" cols="40"></textarea> 
+   <button type="submit">Submit</button> 
+ </form>
