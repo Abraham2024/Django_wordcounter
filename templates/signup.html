@@ -1,0 +1,37 @@
+
+{% load static %}
+<!DOCTYPE html> 
+ <html lang="en"> 
+  
+ <head> 
+     <meta charset="UTF-8"> 
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>Document</title> 
+     <link rel='stylesheet' href="{% static 'form.css' %}" </head> 
+  
+ <body> 
+     <div class="loginwrap"> 
+         <div class="login"> 
+             <h1 class="log"> sign up <span class = "text"> here </span></h1> 
+             <form method = "POST" action="signup"> 
+		     {% csrf_token %}
+                 <label for "name">Name* </label> 
+                 <input type="text" id="name" placeholder="enter your full name" required> 
+
+                 <label for "username"> Username*</label> 
+                 <input type - "text" id="username" placeholder='john1432' required> 
+                 <label for "email">Email*</label> 
+                 <input type="email" id="email" placeholder="abc@mail.com" required> 
+                 <label for "password">Password* </label> 
+                 <input type="password" id="confirm" placeholder="****" required> 
+                 <label for "password"> Confirm Password</label> 
+                 <input type="password" id="confirm" placeholder="*****" required> 
+                 <button class = "loginbtn">sign up </button> 
+             </form> 
+             <p> Already have an account? <a href = "login.html"> login in here </a> </p> 
+         </div> 
+     </div> 
+ </body> 
+  
+ </html>

@@ -165,34 +165,23 @@
           <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-boxes d-flex flex-column justify-content-center">
               <div class="row">
+		      {% for feature in features %}
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-receipt"></i>
-		    <h4>{{feature1.name}}</h4>
-		    <p>{{feature1.details}}</p>
+		    <h4>{{feature.name}}</h4>
+		    <p>{{feature.details}}</p>
                   </div>
                 </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-cube-alt"></i>
-		    <h4>{{feature2.name}}</h4>
-		    <p>{{feature2.details}}</p>
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
-		    <h4>{{feature3.name}}</h4>
-	            <p>{{feature3.details}}</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
+		{% endfor %}
+        <!-- End .content-->
+                      </div> 
+             </div><!-- End .content--> 
+           </div> 
+         </div> 
+  
+       </div> 
+     </section><!-- End Why Us Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
