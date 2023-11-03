@@ -6,6 +6,7 @@ gunicorn==21.2.0
 numpy @ file:///home/builder/.termux-build/python-numpy/src
 packaging==23.2
 platformdirs==3.11.0
+psycopg2-binary==2.9.9
 sqlparse==0.4.4
 tzdata==2023.3
 virtualenv==20.24.5
