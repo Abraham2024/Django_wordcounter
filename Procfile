@@ -1,1 +1,1 @@
-web: gunicorn 'scholarpad.wsgi'
+web: gunicorn scholarpad.wsgi
