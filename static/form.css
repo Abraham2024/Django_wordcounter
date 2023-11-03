@@ -42,7 +42,11 @@ body{
      margin-bottom: 15px; 
      margin-top: 5px; 
    } 
-   #confirm { 
+   #name {
+     background-color: beige;
+     border: none;                                     width: 100%;                                      padding: 10px;
+     border-radius: 7px;                               display: block;                                   box-sizing: border-box;                           margin-bottom: 15px;                              margin-top: 5px;                                }
+   #password2 { 
      background-color: beige; 
      border: none; 
      width: 100%; 
@@ -83,7 +87,10 @@ body{
      box-sizing: border-box; 
      margin-bottom: 15px; 
      margin-top: 5px; 
-   } 
+   }
+   h5{
+	   color: red;
+   }
    .loginbtn{ 
      background-color: black; 
      color: white; 

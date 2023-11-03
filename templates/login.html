@@ -1,37 +1,34 @@
+{% load static %}
 <html lang="en"> 
  <head> 
      <meta charset="UTF-8"> 
      <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
      <meta name="viewport" content="width=<device-width>, initial-scale=1.0"> 
      <title>Document</title> 
-     <link rel = "stylesheet" href = "form.css"> 
+     <link rel = "stylesheet" href = "{% static 'form.css' %}"> 
  </head> 
- <body> 
-     <form> 
+ <body>
          <div class = "loginwrap"> 
              <div class = "login"> 
+		     {% for message in messages %}                     <h5>{{message}} </h5>                             {% endfor %}
                  <h1 class = "logs"> login to your <span class = "text"> Account </span> </h1> 
-                 <form action = get> 
-                     <label for "username">Username / Email</label> 
-                     <input type ="text" id = "username" placeholder="" required> 
+		 <form method = "POST" action = 'login'> 
+			 {% csrf_token %}
+                     <label for "username">Username</label> 
+                     <input type ="text" id = "username" name = "username" placeholder="John" required> 
                      <br> 
                      <label for "password">Password </label> 
-                     <input type = "password" id = "password" placeholder = "*****" required> 
-                     <br> 
-                     <label for "confirm">Confirm password</label> 
-                     <input type = "password" id = "confirm" placeholder = "****" required> 
+                     <input type = "password" id = "password" name = "password" placeholder = "*****" required>
                      <br> 
                      <button class = "loginbtn">login</button> 
                      <br> 
                      <p>Dont have an account?  
-                     <a href="signup.html"> signup here</a> 
+                     <a href="signup"> Sign up here</a> 
                      </p> 
-                     <p> Return to homepage <a href = "index.html"> click here</a></p> 
-                     <p class = "hello"> take our review click <a href = "form.html"> now </a></p> 
+                
                  </form> 
              </div> 
          </div> 
-     </form> 
      <link rel = "java" href = "index.js"> 
  </body> 
  </html>
