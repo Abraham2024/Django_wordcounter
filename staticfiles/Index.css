@@ -1,0 +1,444 @@
+/* This is how you write a comment in CSS! */ 
+  
+ /* Make the navbar links sliiide to their targets, instead of jumping. */ 
+ html { 
+   scroll-behavior: smooth; 
+   user-select: none; 
+   -ms-user-select: none; 
+   -webkit-user-select: none; 
+   background-color: white; 
+   max-width: 96%; 
+   margin-right: 0; 
+  
+ } 
+  
+ body { 
+   margin: 0; 
+   max-width: 100%; 
+   background-color: gray; 
+ } 
+  
+ /* Color the background and add some space to the sides of the main column. */ 
+ .container-fluid { 
+   background-color: #F8B003; 
+   /* We use !important to override the padding setting that Bootstrap already put for the container-fluid class. */ 
+   padding-left: 10% !important; 
+   padding-right: 10% !important; 
+ } 
+  
+ /* Color the main column background white. */ 
+ .col { 
+   background-color: white; 
+ } 
+  
+ /* Put a nice frame with smoothened corners and a soft shadow around all images on the page. */ 
+ img { 
+   border: 4px solid white; 
+   border-radius: 4px; 
+   box-shadow: 0px 4px 8px rgba(17, 17, 17, 0.2); 
+ } 
+  
+ /* Color the second (photography) section's background light gray for contrast. */ 
+ #photography { 
+   background-color: whitesmoke; 
+ } 
+  
+ /* Space out the photos in our gallery a little. */ 
+  
+ .col.main { 
+   background-color: white; 
+   width: 105%; 
+   box-shadow: 0 0 50px rgba(17, 17, 17, 0.5); 
+ } 
+  
+ .row.section { 
+   padding: 5%; 
+ } 
+  
+ .navbar { 
+   box-shadow: 0px 4px 8px rgba(17, 17, 17, 0.2); 
+ } 
+  
+ /* Bold the navbar's brand and put spacing on its left so it shifts right. */ 
+ .navbar-brand { 
+   font-weight: bold; 
+   padding-left: 10%; 
+   color: indianred; 
+ } 
+  
+ .nav-link { 
+   margin-left: 0px; 
+   margin: 0; 
+ } 
+  
+ #nav { 
+   margin: 0; 
+   ; 
+ } 
+  
+ #home { 
+   padding: 20%; 
+   background-image: url("media/pavement.jpg"); 
+   background-size: 100%; 
+  
+ } 
+  
+ .bigtext { 
+   text-align: center; 
+   position: relative; 
+   top: 50%; 
+   left: 50%; 
+   transform: translate(-50%, 0); 
+   color: white; 
+   text-shadow: 0 2px 8px rgba(17, 17, 17, 0.6); 
+ } 
+  
+ marquee { 
+   color: red; 
+ } 
+  
+ #contact { 
+   background-image: url("/images/images (48).jpeg"); 
+   height: 250px; 
+   background-size: 100%; 
+   background-repeat: no-repeat; 
+ } 
+  
+ .video { 
+   width: 100%; 
+   height: 250px; 
+ } 
+  
+ .itec { 
+   width: 250px; 
+   height: 250px; 
+  
+ } 
+  
+ .hello { 
+   margin-left: 2px; 
+   float: left; 
+   width: 40%; 
+   color: ghostwhite; 
+ } 
+  
+ .pink { 
+   margin-left: 10px; 
+   color: goldenrod; 
+   font-weight: bolder; 
+   opacity: 1; 
+ } 
+  
+ .but { 
+   align-items: left; 
+   background-color: skyblue; 
+ } 
+  
+ .button { 
+   display: flex; 
+   flex-direction: column; 
+ } 
+  
+ .p { 
+   margin-left: 10px; 
+   color: white; 
+   text-decoration: bold; 
+   font-size: 15px; 
+   font-weight: bolder; 
+  
+ } 
+  
+ .one { 
+   float: left; 
+ } 
+  
+ .buton { 
+   display: flex; 
+   flex-direction: row; 
+   width: 100%; 
+ } 
+  
+ .button1 { 
+   margin-left: 40px; 
+ } 
+  
+ #quote { 
+   user-select: none; 
+   -ms-user-select: none; 
+   -webkit-user-select: none; 
+   height: 150px; 
+   background-color: black; 
+   color: goldenrod; 
+ } 
+  
+ .check { 
+   color: goldenrod; 
+   font-weight: large; 
+   text-align: center; 
+ } 
+  
+ .logo { 
+   margin-left: 10%; 
+   width: 30px; 
+   height: 30px; 
+ } 
+  
+ .html { 
+   background-image: url("/images/images (23).jpeg"); 
+   color: white; 
+   height: 80px; 
+   width: 40%; 
+   margin-left: 20px; 
+ } 
+  
+ .popular { 
+   display: flex; 
+   flex-direction: column; 
+   background-color: whitesmoke; 
+ } 
+  
+ .img { 
+   height: 250px; 
+   width: 250px; 
+   margin-left: 30px; 
+ } 
+  
+ span { 
+   text-align: right; 
+   float: right; 
+ } 
+  
+ .h { 
+   margin-left: 20px; 
+ } 
+  
+ .head { 
+   background-color: brown; 
+   height: 50px; 
+   float: left; 
+   display: block; 
+   color: #f2f2f2; 
+   text-align: center; 
+   text-decoration: none; 
+   font-size: large; 
+ } 
+  
+ .media { 
+   height: 15px; 
+ } 
+  
+ .socials { 
+   background-color: lightpink; 
+   height: fit content; 
+  
+ } 
+  
+ #tutor { 
+   background-color: whitesmoke; 
+   text-transform: capitalize; 
+ } 
+  
+ .sub { 
+   font-size: 2rem; 
+   color: #000000; 
+   text-transform: uppercase; 
+   margin-top: 30px; 
+   text-align: center; 
+ } 
+  
+ .img1 { 
+   background-color: lightgray; 
+   margin-top: 3px; 
+   height: 250px; 
+   width: 80%; 
+ } 
+  
+ .flex2 { 
+   flex: 50%; 
+   padding: 10px; 
+   margin: 30px; 
+   text-align: center; 
+   background-color: black; 
+   color: darkgoldenrod; 
+ } 
+  
+ .flex1 { 
+   padding: 10px; 
+   margin: 30px; 
+   flex: 50%; 
+   text-align: center; 
+ } 
+  
+ .ico { 
+   margin-left: 10%; 
+   align-items: center; 
+   margin-top: 40px; 
+   height: 100px; 
+   justify-content: space-evenly 
+ } 
+  
+ .subjects { 
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   justify-content: center; 
+  
+ } 
+  
+ .you { 
+   margin-top: 50px; 
+   color: black; 
+ } 
+  
+ .map { 
+   position: fixed; 
+   bottom: px; 
+   right: 40%; 
+   color: black; 
+   padding: 10px 20px; 
+   background-color: transparent; 
+   border: none; 
+   width: 100px; 
+   border-radius: 20px; 
+   cursor: pointer; 
+ } 
+  
+ a.icon { 
+   margin: 20px; 
+   margin-top: 10px; 
+ } 
+  
+ .buti { 
+   background-color: black; 
+   justify-content: center; 
+   align-items: center; 
+   width: 100px; 
+   border-radius: 20px; 
+   margin-left: 35%; 
+   margin-top: 28%; 
+   color: white; 
+ } 
+  
+ .button { 
+   display: inline-block; 
+   padding: 12px 24px; 
+   border: none; 
+   border-radius: 6px; 
+   background-color: #2196f3; 
+   color: #ffffff; 
+   font-size: 1.4rem; 
+   text-decoration: none; 
+   text-align: center; 
+   transition: background-color 0.3s ease; 
+   margin-bottom: 15px; 
+   width: 300px; 
+   max-width: 80%; 
+ } 
+  
+ .flex { 
+   margin-top: 40px; 
+   flex: 50%; 
+   text-align: center; 
+ } 
+  
+ .welcome { 
+   background-image: url("/images/images (50).jpeg"); 
+   background-size: 100%; 
+   background-repeat: no-repeat; 
+   margin-left: 10px; 
+ } 
+  
+ #subjects { 
+   background-image: url("images/page.jpg"); 
+   height: 250px; 
+   background-size: cover; 
+  
+ } 
+  
+ .button:hover { 
+   background-color: #1565c0; 
+ } 
+  
+ .button a { 
+   color: #ffffff; 
+   text-decoration: none; 
+ } 
+  
+ .footer { 
+   width: 100%; 
+   position: fixed; 
+   bottom: 0; 
+   background-color: White; 
+   left: 0%; 
+   z-index: 2; 
+   box-shadow: 0 0 5px darkgrey; 
+   display: flex; 
+   color: darkgrey; 
+   padding: 10px; 
+   align-items: center; 
+   justify-content: space-evenly; 
+ } 
+  
+ .text { 
+   margin-top: 0; 
+   margin-left: 10%; 
+ } 
+  
+ footer .save { 
+   align-items: center; 
+   text-align: center; 
+ } 
+  
+ .button:hover a { 
+   color: #ffffff; 
+   text-decoration: none; 
+ } 
+  
+ @media screen and (min-width: 600px) { 
+   html { 
+     max-width: 100% 
+   } 
+  
+   .media { 
+     height: 15px; 
+  
+   } 
+  
+   .hello { 
+     width: 45%; 
+     margin-top: 25%; 
+   } 
+  
+   #contact { 
+     height: 600px; 
+   } 
+  
+   .h { 
+     margin-left: 20px; 
+   } 
+  
+   a.icon { 
+     margin: 8%; 
+   } 
+  
+   .popular { 
+     flex-direction: row; 
+   } 
+  
+   .buti { 
+     margin-left: 45%; 
+   } 
+  
+   .flex1 { 
+     display: none; 
+     overflow-x: auto; 
+     max-width: 1000px; 
+   } 
+  
+   .html { 
+     color: white; 
+     height: 150px; 
+     width: 60%; 
+     margin-left: 30px; 
+   } 
+ }
