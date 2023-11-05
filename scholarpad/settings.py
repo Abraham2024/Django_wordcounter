@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'corsheaders',
     'django.contrib.staticfiles',
     'login'
 ]
@@ -48,32 +47,8 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-# settings.py
-
-# Add the allowed origins (domains) for cross-origin requests.
-CORS_ALLOWED_ORIGINS = [
-    "https://djangowordcounter-production-3066.up.railway.app",
-    "https://example.com",
-    "http://localhost:3000",  # You can specify multiple origins
-]
-
-# Allow all headers in the request.
-CORS_ALLOW_HEADERS = ['*']
-
-# Allow specific HTTP methods.
-CORS_ALLOW_METHODS = [
-    'DELETE',
-    'GET',
-    'OPTIONS',
-    'PATCH',
-    'POST',
-    'PUT',
-]
-
 
 
 ROOT_URLCONF = 'scholarpad.urls'
