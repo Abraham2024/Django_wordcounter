@@ -39,15 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'login',
-    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -130,18 +128,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles", 'static')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = [
-    "https://djangowordcounter-production-3066.up.railway.app",
-    # Add other origins if needed
-]
 
-# Add the following lines to enable the specific headers
-CORS_ALLOW_HEADERS = list(default_headers) + [
-      'X-Auth-Token',
-]
-
-# Update your ALLOWED_HOSTS to include the specified origin
-ALLOWED_HOSTS = [
-    "djangowordcounter-production-3066.up.railway.app",
-]
