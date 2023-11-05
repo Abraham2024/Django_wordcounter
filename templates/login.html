@@ -11,7 +11,7 @@
              <div class = "login"> 
 		     {% for message in messages %}                     <h5>{{message}} </h5>                             {% endfor %}
                  <h1 class = "logs"> login to your <span class = "text"> Account </span> </h1> 
-		 <form method = "POST" action = "login"> 
+		 <form method = "POST" action = "{% 'login' %}"> 
 			 {% csrf_token %}
                      <label for "username">Username</label> 
                      <input type ="text" id = "username" name = "username" placeholder="John" required> 
