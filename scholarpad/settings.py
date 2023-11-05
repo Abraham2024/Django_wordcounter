@@ -52,11 +52,42 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# settings.py
+
+# Add the allowed origins (domains) for cross-origin requests.
 CORS_ALLOWED_ORIGINS = [
-    # Add the origins that you want to allow requests from.
     "https://djangowordcounter-production-3066.up.railway.app",
-    # Add more origins if needed.
+    "https://example.com",
+    "http://localhost:3000",  # You can specify multiple origins
 ]
+
+# Allow all headers in the request.
+CORS_ALLOW_HEADERS = ['*']
+
+# Allow specific HTTP methods.
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+# Allow specific HTTP headers in the response.
+CORS_ALLOW_HEADERS = [
+    'authorization',
+    'content-type',
+]
+
+# Allow cookies to be included in cross-origin requests.
+CORS_ALLOW_CREDENTIALS = True
+
+# Set the maximum age for preflight requests in seconds.
+CORS_PREFLIGHT_MAX_AGE = 3600  # 1 hour
+
+# Allow specific HTTP headers in the response for preflight requests.
+CORS_ALLOW_PREFLIGHT = True
 
 ROOT_URLCONF = 'scholarpad.urls'
 
