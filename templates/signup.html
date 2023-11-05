@@ -18,7 +18,7 @@
 		 <h5>{{message}}</h5>
 		 {% endfor %}
              <h1 class="log"> sign up <span class = "text"> here </span></h1> 
-	     <form method = "POST" action="{% 'signup' %}"> 
+	     <form method = "POST" action="signup"> 
 		     {% csrf_token %}
                  <label for "username"> Username*</label> 
                  <input type - "text" id = "username" name="username" placeholder='john' required> 
