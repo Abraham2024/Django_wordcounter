@@ -1,0 +1,105 @@
+body{ 
+     background-color: beige; 
+   } 
+   .loginwrap{ 
+     display: flex; 
+     width: 100%; 
+     height: 100vh; 
+   } 
+   .login{ 
+     background-color: whitesmoke; 
+     color: black; 
+     border-radius: 12px; 
+     padding: 30px; 
+     max-width: 400px; 
+     margin: auto; 
+   } 
+   .tex{ 
+     width: 250px; 
+     height: 100px; 
+   } 
+   .red{ 
+     color: black; 
+     background-color: aqua; 
+     font-size: large; 
+     text-transform: capitalize; 
+   } 
+   .hello{ 
+     text-transform: capitalize; 
+   } 
+   .logs{ 
+     letter-spacing: 1px; 
+     text-transform: capitalize; 
+   } 
+   #username { 
+     background-color: beige; 
+     border: none; 
+     width: 100%; 
+     padding: 10px; 
+     border-radius: 7px; 
+     display: block; 
+     box-sizing: border-box; 
+     margin-bottom: 15px; 
+     margin-top: 5px; 
+   } 
+   #name {
+     background-color: beige;
+     border: none;                                     width: 100%;                                      padding: 10px;
+     border-radius: 7px;                               display: block;                                   box-sizing: border-box;                           margin-bottom: 15px;                              margin-top: 5px;                                }
+   #password2 { 
+     background-color: beige; 
+     border: none; 
+     width: 100%; 
+     padding: 10px; 
+     border-radius: 7px; 
+     display: block; 
+     box-sizing: border-box; 
+     margin-bottom: 15px; 
+     margin-top: 5px; 
+   } 
+   .text{ 
+     color: red; 
+   } 
+   #password { 
+     background-color: beige; 
+     border: none; 
+     width: 100%; 
+     padding: 10px; 
+     border-radius: 7px; 
+     display: block; 
+     box-sizing: border-box; 
+     margin-bottom: 15px; 
+     margin-top: 5px; 
+   } 
+   .log{ 
+     text-transform: capitalize; 
+     width: 100%; 
+     letter-spacing: 10px; 
+  
+   } 
+   #email { 
+     background-color: beige; 
+     border: none; 
+     width: 100%; 
+     padding: 10px; 
+     border-radius: 7px; 
+     display: block; 
+     box-sizing: border-box; 
+     margin-bottom: 15px; 
+     margin-top: 5px; 
+   }
+   h5{
+	   color: red;
+   }
+   .loginbtn{ 
+     background-color: black; 
+     color: white; 
+     width: 50%; 
+     height: 30px; 
+     font-size: large; 
+     border-radius: 7px; 
+     border: none; 
+   } 
+   label{ 
+     font-weight: bolder; 
+   }
