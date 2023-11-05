@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-92(d*%=0qmsomhvdt!))-xt8c(lj0uj(lw5j3vu9q0o6mplb8f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -74,20 +74,7 @@ CORS_ALLOW_METHODS = [
     'PUT',
 ]
 
-# Allow specific HTTP headers in the response.
-CORS_ALLOW_HEADERS = [
-    'authorization',
-    'content-type',
-]
 
-# Allow cookies to be included in cross-origin requests.
-CORS_ALLOW_CREDENTIALS = True
-
-# Set the maximum age for preflight requests in seconds.
-CORS_PREFLIGHT_MAX_AGE = 3600  # 1 hour
-
-# Allow specific HTTP headers in the response for preflight requests.
-CORS_ALLOW_PREFLIGHT = True
 
 ROOT_URLCONF = 'scholarpad.urls'
 
