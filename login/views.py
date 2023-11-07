@@ -88,6 +88,9 @@ def logout(request):
     auth.logout(request)
     return redirect('/')
 
+def courses(request):
+    return render(request, 'courses.html')
+
 
 def counter(request):
     text = request.POST['text']
